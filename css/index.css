@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", Helvetica, Arial, Helvetica, sans-serif;
+    background-color: #ECEEF2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+input[type="date"] {
+    padding: 9px 12px !important;
+    background-color: #FFFFFF;
+}
+
+input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0 !important;
+}
+
+#container {
+    height: 100%;
+    max-width: 100%;
+    padding: 10px 20px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-center {
+    width: 620px;
+    height: 763px;
+    /* flex: 0 1 620px; */
+    padding: 28px 52.5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.containerLogo {
+    max-width: 213px;
+    max-height: 124px;
+    margin: 0 auto;
+}
+
+.containerLogo img {
+    max-width: 100%;
+    flex-shrink: 0;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.data-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.email,
+.password {
+    width: 64%;
+}
+
+.phone,
+.birthday {
+    width: 31.5%;
+}
+
+.email,
+.phone {
+    margin-top: 18px;
+}
+
+.password,
+.birthday {
+    margin-top: 31px;
+}
+
+.data-group input {
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+    padding: 11px 0 11px 12px;
+    margin-top: 4px;
+    width: 100%;
+}
+
+.title-input {
+    font-size: 14px;
+    line-height: 16px;
+    color: #767676;
+}
+
+.feedBackValidation {
+    margin-top: 7px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FF4B4B;
+}
+
+.container-button {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-top: 126px;
+    flex-wrap: wrap;
+}
+
+.container-button button {
+    background: #0DBDBD;
+    border-radius: 10px;
+    border-width: 0;
+    color: #FFFFFF;
+    padding: 11px 10.5px;
+    cursor: pointer;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+@media (max-width: 650px) {
+
+    html,
+    body {
+        min-height: 100%;
+        padding: 0;
+    }
+
+    .container-center {
+        min-height: 100vh;
+        width: 100%;
+        padding: 28px 25px;
+        align-content: center;
+        border-radius: 0;
+    }
+
+    input[type="date"] {
+        padding: 3px 0 3px 2px !important;
+    }
+
+    .container-button {
+        flex-direction: column;
+        order: 11;
+        margin-top: 40px;
+    }
+
+    .container-button button {
+        flex: 1;
+        margin-top: 12px;
+    }
+
+    .email,
+    .password {
+        width: 100%;
+        display: flex;
+    }
+
+    .phone,
+    .birthday {
+        width: 48%;
+        order: 10;
+    }
+
+    .password,
+    .birthday {
+        margin-top: 18px;
+    }
+
+    .data-group input {
+        padding: 5px 12px;
+    }
+}

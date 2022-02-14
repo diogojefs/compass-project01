@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project01 - Register Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <div class="container-center">
+        <div class="containerLogo">
+            <img src="img/data.png">
+        </div>
+
+        <h1>Intern Sign Up</h1>
+
+        <div class="data-group name">
+            <label class="title-input" for="name">Full Name *</label>
+            <input type="text" id="inputName" placeholder="Name" />
+            <label id="feedbackName" class="feedBackValidation invisible">FullName Invalid</label>
+        </div>
+
+        <div class="data-group email">
+            <label class="title-input" for="email">Email *</label>
+            <input type="email" id="inputEmail" placeholder="foo@bar.com" />
+            <label id="feedbackEmail" class="feedBackValidation invisible">Email Invalid</label>
+        </div>
+
+        <div class="data-group phone">
+            <label class="title-input" for="phone">Phone *</label>
+            <input type="text" id="inputPhone" placeholder="(83) 00000-0000" />
+            <label id="feedbackPhone" class="feedBackValidation invisible">Phone Invalid</label>
+        </div>
+
+        <div class="data-group password">
+            <label class="title-input" for="">Password *</label>
+            <input type="password" id="inputPassword" />
+            <label id="feedbackPassword" class="feedBackValidation invisible">Password Invalid</label>
+        </div>
+
+        <div class="data-group birthday">
+            <label class="title-input" for="">Birthday *</label>
+            <input type="date" id="inputBirthday">
+            <label id="feedbackBirthday" class="feedBackValidation invisible">Age Invalid</label>
+        </div>
+
+        <div class="container-button">
+            <div>
+                <div id="container-check">
+                    <input type="checkbox" id="checkTerms" name="scales">
+                    <label for="scales">I accept the terms and privacy</label>
+                </div>
+                <label id="feedbackTerms" class="feedBackValidation invisible">You must accept the terms</label>
+            </div>
+            <button type="submit" id="register" value="Submit">Register</button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
